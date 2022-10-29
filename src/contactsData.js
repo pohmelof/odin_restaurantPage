@@ -21,7 +21,7 @@ export const contactsData = [
     name: "Terentia Sisero",
     position: "Cook",
     tel: "8-800-2000-600",
-    email: "princessInACastle@stinks.not",
+    email: "princess@stinks.not",
     image: {
       src: "./images/terentia.jpg",
       alt: "mistress of the house",

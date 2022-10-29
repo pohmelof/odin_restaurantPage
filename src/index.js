@@ -33,8 +33,6 @@ btns.forEach((item) =>
     } else if (e.target.innerText === "Contacts") {
       renderMain(contacts());
     }
-
-    console.log(e.target.innerText);
   })
 );
 containerEl.append(home());

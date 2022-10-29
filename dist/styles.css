@@ -21,7 +21,7 @@ body {
     background-color: var(--bg-color);
     padding: 0;
     margin: 0;
-    min-width: 550px;
+    min-width: 520px;
     
 }
 
@@ -71,6 +71,16 @@ header {
     background-image: var(--gradient-header);
     padding: 0 20px 0;
     user-select: none;
+}
+@media (max-width: 550px) {
+    header {
+        flex-direction: column;
+        align-items: center;;
+    }
+
+    #content {
+        grid-template-rows: minmax(85px, 125px) 1fr 60px; 
+    }
 }
 
 .nav {
@@ -192,6 +202,7 @@ table tr:nth-child(2n + 1) {
     margin: 30px 0;
     align-items: center;
     justify-content: center;
+    align-self: stretch;
     background-color: var(--main-color);
     background-image: var(--gradient-header);
     border: 2px solid;
@@ -210,7 +221,7 @@ table tr:nth-child(2n + 1) {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 50px;
+    padding-left: 30px;
 }
 .info > p {
     margin: 10px 0;
