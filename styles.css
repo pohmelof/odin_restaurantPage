@@ -21,7 +21,7 @@ body {
     background-color: var(--bg-color);
     padding: 0;
     margin: 0;
-    min-width: 520px;
+    min-width: 400px;
     
 }
 
@@ -197,7 +197,7 @@ table tr:nth-child(2n + 1) {
 }
 .contact-item {
     display: grid;
-    grid-template-columns: 160px 1fr;
+    grid-template-columns: minmax(120px, 160px) 1fr;
     padding: 20px;
     margin: 30px 0;
     align-items: center;
@@ -209,13 +209,10 @@ table tr:nth-child(2n + 1) {
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
-.contact-item img {
-    width: 160px;
-    height: 160px;
+/* .contact-item img {
     object-fit: cover;
-    /* filter: grayscale(100%); */
 
-}
+} */
 
 .info {
     display: flex;
